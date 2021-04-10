@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container {
+	width: 100%;
+	height: auto;
+	background-color: rosybrown;
+	
+}
+
+.part1 {
+	width: 100%;
+	height: 800px;
+	background-image: url("../images/bg_coc.png");
+	background-size: cover;
+	font-family:"SFU Eurostile";
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+
+}
+
+.logo {
+	width: 30%;
+	height: 50px;
+	color: whitesmoke;
+	float: left;
+}
+
+.logo p { margin-left: 40px; margin-top: 10px; letter-spacing: 4px; font-size: 23px; }
+.menu {
+	width: 70%;
+	height: 50px;
+	float: right;
+}
+
+ul {
+	list-style: none;
+	margin-top: 0;
+	margin-right: 50px;
+}
+
+ul li {
+	float: right;
+	display: inline-block;
+	padding: 16px 40px;
+	position: relative;
+}
+
+ul li:hover {
+	background-color: #ff7a45;
+	
+}
+
+ul li a {
+	color: aliceblue;
+	text-decoration: none;
+	
+}
+
+ul li ul {
+	position: absolute;
+	top: 50px;
+	left: -40px;
+	visibility: hidden;
+}
+
+ul li:hover ul {
+	visibility: visible;
+	
+}
+
+ul li ul li {
+	width: 80px;
+	background-color: cornflowerblue;
+	
+}
+
+.name {
+	width: 80%;
+	height: 200px;
+	display: block;
+	font-family:"SFU Eurostile";
+	font-size: 70px;
+	letter-spacing: 10px;
+	font-weight: bold;
+	color: whitesmoke;
+	margin-left: 100px;
+	margin-top: 200px;
+}
+
+.name h1 {bottom: 0;}
+
+.slogan {
+	width: 60%;
+	height: 80px;
+/*	border: solid #FA6313 1px;*/
+	display: block;
+	font-family: "SFU Eurostile";
+	letter-spacing: 3px;
+	font-size: 20px;
+	color: whitesmoke;
+	margin-left: 100px;
+}
+
+.part2 {
+	width: 100%;
+	height: 800px;
+	background-color: #FFFFFF;
+}
+
+.box1 {
+	width: 50%;
+	height: 800px;
+	float: left;
+	top: 0;
+	position: relative;
+}
+.avatar {
+	position: absolute;
+	width: 50%;
+	height: auto;
+	border: 1px #35BF16 solid;
+	margin: 150px 
+}
+
+.avatar img {
+	width: 100%;
+}
+
+.box2 {
+	width: 50%;
+	height: 800px;
+
+	float: left;
+	top: 0;
+	position: relative;
+}
+
+.info {
+	position: absolute;
+	width: 60%;
+	font-family:"SFU Eurostile";
+	height: 350px;
+	border: 1px #35BF16 solid;
+	margin-left: 120px;
+	margin-top: 0px;
+}
+
+
+
+.abtme{
+	margin-top: 120px;;
+	margin-left: 120px;
+	font-size: 50px;
+	 font-family: 'SFU Eurostile';
+	 letter-spacing: 5px;
+	  animation: glitch 1s linear infinite;
+}
+/*Glitch about me*/
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.abtme:before,
+.abtme:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.abtme:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.abtme:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
+/*Ket thuc glitch*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.part3 {
+	width: 100%;
+	height: 800px;
+	background-color: #030e12;
+	position: relative;
+}
+
+.fresh {
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	font-family: "SFU Eurostile";
+	color: #FFFFFF;
+	margin-top: 70px;
+	
+}
+
+.sen1{
+	
+	text-align: center;
+	font-size: 30px;
+
+}
+
+.sen2 {
+	font-size: 50px;
+	text-align: center;
+	font-weight:400px;
+	font-style: oblique;
+	letter-spacing: 5px;
+	top:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.part4 {
+	width: 100%;
+	height: 800px;
+	background-color: #FFFFFF;
+	position: relative;
+
+}
+ 
+.part4 h1 {color: #000000; font-family: "SFU Eurostile"; text-align: center;}
+
+.project {position: absolute;
+width: 100%;
+	height: 800px;}
+.part5 {
+	width: 100%;
+	height: 800px;
+	background-color:brown;
+}
+
